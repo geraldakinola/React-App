@@ -17,10 +17,19 @@
     gap: 1rem;
     align-items: flex-end;
     flex-flow: column-reverse;
+    flex: 1;
     padding: 2rem;
-
-
 }
+
+.expense-item h2 {
+    color: #3a3a3a;
+    font-size: 1rem;
+    flex: 1;
+    margin: 0 1rem;
+    color: white;
+}
+
+
 
 .expense-item_price {
     font-size: 1rem;
@@ -33,13 +42,12 @@
 }
 
 .expense-item_date {
-    background: #40005d;
-    color: white;
+    color: black;
     font-size: 1rem;
     font-weight: bold;
-    padding: 0.5rem;
-    border: 1px solid white;
-    border-radius: 12px;
+
+
+
 }
 
 
@@ -52,7 +60,13 @@
     }
 }
 
+.expense-item__description h2 {
+    font-size: 1.25rem;
+}
 
+.expense-item__price {
+    font-size: 1.25rem;
+}
 
 
 
