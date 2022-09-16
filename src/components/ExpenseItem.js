@@ -5,9 +5,9 @@ function ExpenseItem() {
     const expenseTitle = 'Car Insurance';
     const expenseAmount = 400.24
     return <div className='expense-item'>
-        <div className='expense-item_date'>September 10th 2022</div>
-        <h2>{4 * 4}</h2>
-        <div className='expense-item_price'>$400.24</div>
+        <div>{expenseDate.toISOString()}</div>
+        <h2>{expenseTitle}</h2>
+        <div className='expense-item_price'>${expenseAmount}</div>
     </div>
 }
 
