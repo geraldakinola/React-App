@@ -4,9 +4,9 @@ import ExpenseItem from "./components/ExpenseItem";
 function App() {
   const expenses = [
     { id: 'e1', title: 'Car Insurance', amount: 400.26, date: new Date(2021, 2, 28) },
-    { id: 'e2', title: 'New TV', amount: 400.26, date: new Date(2021, 2, 28) },
-    { id: 'e3', title: 'Toilet Paper', amount: 400.26, date: new Date(2021, 2, 28) },
-    { id: 'e4', title: 'House Insurance', amount: 400.26, date: new Date(2021, 2, 28) },
+    { id: 'e2', title: 'New TV', amount: 400.26, date: new Date(2021, 2, 22) },
+    { id: 'e3', title: 'Toilet Paper', amount: 400.26, date: new Date(2021, 2, 25) },
+    { id: 'e4', title: 'House Insurance', amount: 400.26, date: new Date(2021, 2, 21) },
   ]
   return (
     <div>
