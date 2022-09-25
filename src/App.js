@@ -1,6 +1,6 @@
 import ExpenseDate from './components/ExpenseDate';
 
-import ExpenseItem from "./components/ExpenseItem";
+import ExpenseItem from "./components/Expenses";
 
 
 function App() {
