@@ -12,7 +12,9 @@ function ExpenseItem(props) {
             <ExpenseDate date={props.date} />
             <h2>{props.title}</h2>
             <div className='expense-item_price'>${props.amount}</div>
+            <button onClick={() => {console.log('Clicked!')}}>Change Title</button>
         </Card>
+        
     );
 }
 
