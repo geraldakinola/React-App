@@ -17,13 +17,13 @@ const [userInput, SetUserInput] = useState({
 
 
   const titleChangeHandler = (event) => {
-    // // setEnteredTitle('event,target.value');
+    // //   setEnteredTitle('event,target.value');
     // SetUserInput({
     //  ...userInput, 
     //   enteredTitle: event.target.value
     // });
     SetUserInput((prevState) => {
-      return {...prevState, enteredTitle: event.target.value}
+      return {...prevState, enteredTitle: event}
     });
   };
 
