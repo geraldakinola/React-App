@@ -39,7 +39,7 @@ const ExpenseForm = (props) => {
     // setEnteredDate(event.target.value)
     //  SetUserInput({
     //  ...userInput, 
-    //   enteredDate: event.target.value
+    //   enteredDate: event.target.value~
     // })
   };
 
@@ -80,6 +80,7 @@ return (
         </div>
        </div>
        <div className="new-expense__actions">
+        <button type="button" onClick={props.onCancel}>Cancel</button>
         <button type="submit">Add Expense</button>
        </div>
     </form>
