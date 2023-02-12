@@ -8,39 +8,39 @@ const ExpenseForm = (props) => {
    const [enteredTitle, setEnteredTitle] = useState('')
     const [enteredAmount, setEnteredAmount] = useState('')
     const [enteredDate, setEnteredDate] = useState('')
-// const [userInput, SetUserInput] = useState({
-//   enteredTitle: '',
-//    enteredAmount: '',
-//     enteredDate: '',
-
+const [userInput, SetUserInput] = useState({
+  enteredTitle: '',
+   enteredAmount: '',
+    enteredDate: '',
+})
 
 
 
   const titleChangeHandler = (event) => {
-      //  setEnteredTitle('event,target.value');
-    // SetUserInput({
-    //  ...userInput, 
-    //   enteredTitle: event.target.value
-    // });
-    // SetUserInput((prevState) => {
-    //   return {...prevState, enteredTitle: event}
-    // });
+       setEnteredTitle(event.target.value);
+    SetUserInput({
+     ...userInput, 
+      enteredTitle: event.target.value
+    });
+    SetUserInput((prevState) => {
+      return {...prevState, enteredTitle: event}
+    });
   };
 
   const amountChangeHandler = (event) => {
-    // setEnteredAmount(event.target.value)
-    //  SetUserInput({
-    //  ...userInput, 
-    //   enteredAmount: event.target.value
-    // });
+    setEnteredAmount(event.target.value)
+     SetUserInput({
+     ...userInput, 
+      enteredAmount: event.target.value
+    });
   };
 
   const dateChangeHandler = (event) => {
-    // setEnteredDate(event.target.value)
-    //  SetUserInput({
-    //  ...userInput, 
-    //   enteredDate: event.target.value~
-    // })
+    setEnteredDate(event.target.value)
+     SetUserInput({
+     ...userInput, 
+      enteredDate: event.target.value
+    })
   };
 
   const submitHandler = (event) => {
@@ -68,7 +68,7 @@ return (
           </div>
            <div className="new-expense__control">
           <label>Amount</label>
-          <input type= "number" min="0.01" step="0.01"
+          <input type= "number" min="1" step="1"
           value={enteredAmount}
            onChange={amountChangeHandler}/>
           </div>
