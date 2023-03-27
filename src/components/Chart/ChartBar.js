@@ -17,5 +17,6 @@ const ChartBar = (props) => {
           <div className='chart-bar__label'>{props.label}</div>
     </div>
     );
+}; 
 
-};
+export default ChartBar;
